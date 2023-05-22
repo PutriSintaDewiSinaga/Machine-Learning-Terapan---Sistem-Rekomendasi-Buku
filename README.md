@@ -142,7 +142,7 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
    viii. Kolom 'Image-URL-L', marupakan URL gambar cover buku dalam ukuran L(Large)
     
 
--  Dataset yang kedua yakni 'Ratings' yang memiliki jumlah 1149780 data dan memiliki 3 kolom, berikut penjelasan mengenai kolom-kolomnya :
+-  Dataset yang ketiga yakni 'Ratings' yang memiliki jumlah 1149780 data dan memiliki 3 kolom, berikut penjelasan mengenai kolom-kolomnya :
 
 > Ratings.csv
     
@@ -155,7 +155,7 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
     
 Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Analysis) yang menjelaskan variabel-variabel yang sudah dijelaskan sebelumnya. Dikarenakan ketiga dataset yang kita gunakan merupakan dataset dalam jumlah yang banyak yakni lebih dari 200.000, maka di pada proses ini saya hanya mengambil 12.000 data pertama dari setiap variabel di atas dalam pembuatan sistem rekomendasi ini.
 
-    proyek ini saya menggabungkan data itu menjadi satu sehingga menghasilkan sebagai berikut:
+ proyek ini saya menggabungkan dataset Books dan dataset Ratings itu menjadi satu sehingga menghasilkan sebagai berikut:
     
     
 ### Visualization & Analysis
