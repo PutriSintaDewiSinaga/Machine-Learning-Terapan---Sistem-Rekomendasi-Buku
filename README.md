@@ -34,3 +34,6 @@
 <p align='center'>
     <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/buku.jfif?raw=true" alt="Buku">
 </p>
+
+    
+    
