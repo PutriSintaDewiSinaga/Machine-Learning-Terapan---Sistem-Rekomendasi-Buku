@@ -223,10 +223,24 @@ Sebelum data benar-benar siap diolah oleh algoritma machine learning, perlu dila
 -  Pengecekan data null
     
 Dilakukan pengecekan data null dengan menggunakan fungsi isnull dimana terdiri dari 5 dataset yaitu data_books, data_rating, data_users, data_train yang merupakan gabungan dari data_books dan data_rating dan data_using yang merupakan gabungan dari data_rating, data_users. Data tidak memiliki null sehingga tidak perlu dilakukan teknik penghapusan data null, teknik dilakukan bila disalah satu data terdapat nilai null.
+
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7.png?raw=true" height=auto alt="pie-chart">
+</p>    
     
 -  Pengecekan data duplikat
 
-Selanjutnya dilakukan persiapan penghapusan data duplikat, dengan membuat variable baru dengan nama ‘data_prep’ yang berisi dataframe ‘data_train’ yang diurutkan berdasarkan ‘ISBN’ dan nama ‘data_prus’ yang berisi dataframe ‘data_using’ yang diurutkan berdasarkan ‘UserID’. Kemudian, setelah dilakukan persiapan dilanjutkan dengan penghapusan data duplikat menggunakan fungsi drop_duplicates. Penghapusan data duplikat berguna bila data train dan data test ada yang sama maka akan dihasilkan jumlah rows berkurang ketika dilakukan penghapusan data duplikat. 
+Selanjutnya dilakukan persiapan penghapusan data duplikat, dengan membuat variable baru dengan nama ‘data_prep’ yang berisi dataframe ‘data_train’ yang diurutkan berdasarkan ‘ISBN’ dan nama ‘data_prus’ yang berisi dataframe ‘data_using’ yang diurutkan berdasarkan ‘UserID’. Berikut ini merupakan hasil dari persiapan penghapusan data duplikat: 
+    
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7.png?raw=true" height=auto alt="pie-chart">
+</p>    
+    
+Kemudian, setelah dilakukan persiapan dilanjutkan dengan penghapusan data duplikat menggunakan fungsi drop_duplicates. Penghapusan data duplikat berguna bila data train dan data test ada yang sama maka akan dihasilkan jumlah rows berkurang ketika dilakukan penghapusan data duplikat. 
+    
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7.png?raw=true" height=auto alt="pie-chart">
+</p>
     
 -  Melakukan konversi data series dan pembuatan dictionary
 
