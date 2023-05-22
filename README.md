@@ -352,6 +352,7 @@ Pada Gambar 17, merupakan hasil rekomendasi dari model collaborative filtering d
 ## Evaluation
     
 Saya menggunakan dua metrik evaluasi yang digunakan untuk mengukur kinerja model pada collaborative filtering, yang pertama menggunakan metrik Root Mean Squared Error (RMSE) dan metrik Accuracy, berikut penjelasannya :
+
     
 1.  Root Mean Squared Error (RMSE) merupakan besarnya tingkat kesalahan hasil prediksi, dimana metode estimasi yang mempunyai Root Mean Square Error (RMSE) lebih kecil dikatakan lebih akurat daripada metode estimasi yang mempunyai Root Mean Square Error (RMSE) lebih besar. Rumus dari RMSE sebagai berikut:
   
@@ -379,6 +380,7 @@ root_mean_squared_error       | 0.1512  |
 val_root_mean_squared_error   | 0.2980  |
 
 Pada Tabel 1, diperoleh pada epoch 100/100 nilai root_mean_squared_error sebesar 0.1512 dan nilai val_root_mean_squared_error sebesar 0.2980     
+
     
 2.  Mean Squared Error (MSE). 
     Teknik ini menghitung selisih rata-rata nilai sebenarnya dengan nilai prediksi. Berikut kode programnya :
@@ -392,14 +394,7 @@ Pada Tabel 1, diperoleh pada epoch 100/100 nilai root_mean_squared_error sebesar
 Pada Gambar 20, Hasil dari kode program di atas yakni : MSE dari pada data train = 2.134168001215646e-05 MSE dari pada data validation = 8.878335751528855e-05
 
   
-<p align="center">Tabel 1. Evaluasi root_mean_squared_error dan val_root_mean_squared_error</p> 
-    
-Metrik                        | Nilai   |
------------------------------ | ------- |
-root_mean_squared_error       | 0.1512  |
-val_root_mean_squared_error   | 0.2980  |
-
-Pada Tabel 1, diperoleh pada epoch 100 nilai root_mean_squared_error sebesar 0.1512 dan nilai val_root_mean_squared_error sebesar 0.2980    
+   
     
 ## Conclusion
 
