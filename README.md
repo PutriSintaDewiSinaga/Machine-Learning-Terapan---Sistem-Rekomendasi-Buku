@@ -100,10 +100,7 @@ Berdasarkan rumusan masalah yang telah dipaparkan di atas, maka proyek penelitia
 
 ### Solution statements
 
-Untuk menyelesaikan permasalahan di atas, kita akan menggunakan dua algoritma sistem rekomendasi sebagai solusi permasalahan, yakni Content-Based Filtering dan yang kedua yakni Collaborative Filtering.
-
--  Content Based Filtering. Algoritma ini akan merekomendasikan item yang mirip dengan item yang disukai pengguna di masa lalu. Kelebihan dari algoritma ini yakni semakin banyak informasi yang diberikan pengguna, semakin baik akurasi sistem rekomendasi. Kekurangannya yakni Sistem hanya akan menunjukkan item yang nilainya tinggi untuk dicocokkan dengan profil pengguna, maka pengguna akan selalu menemukan item serupa dengan yang sudah direkomendasikan sebelumnya.
-Collaborative Filtering. 
+Untuk menyelesaikan permasalahan di atas, kita akan menggunakan satu algoritma sistem rekomendasi sebagai solusi permasalahan, yakni :
     
 -  Collaborative filtering bergantung pada pendapat komunitas pengguna. Ia tidak memerlukan atribut untuk setiap itemnya seperti pada sistem berbasis konten. Kelebihan dari teknik ini yakni dapat membantu pengguna menemukan minat baru. Kekurangannya yakni tidak dapat menangani item baru/fresh. Jadi, jika item tidak terlihat selama pelatihan, sistem tidak dapat melakukan proses embedding untuk item tersebut dan tidak dapat mengkueri model dengan item ini.
 
@@ -348,20 +345,15 @@ Pada tahap ini saya menggunakan model collaborative filtering dimana menggunakan
   
 Pada Gambar 17, merupakan hasil rekomendasi dari model collaborative filtering dimana user dengan id 882. Kita dapat melihat bahwa Buku dengan peringkat tinggi dari pengguna  yaitu ‘The Da Vinci Code : Dan Brown’ Serta 10 Rekomendasi Buku Teratas yang salah satunya yaitu ‘The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS’.
 
-**Kelebihan dan Kekurangan Content Based Filtering dan Collaborative Filtering**: 
-- Untuk membuat sistem rekomendasi yang mampu memberikan rekomendasi yang tepat pada User, maka dalam proyek ini dibuat sistem rekomendasi yang menerapkan dua metode/algoritma, yaitu metode Content Based Filtering dan Collaborative Filtering.
-- Dengan metode *Content Based Filtering*, User akan diberikan rekomendasi film berdasarkan kesamaan genre dari film yang pernah ditontonnya.
-- Kelebihan dari metode *Content Based Filtering* adalah metode ini dapat memberikan rekomendasi film-film yang baru dirilis kepada User lebih cepat, tanpa terlebih dahulu menunggu penilaian/rating User lain. Alasannya, karena sistem rekomendasi ini memberikan rekomendasi sesuai dengan kesamaan genre antar suatu film, tanpa terpengaruh penilaian/rating user lain.
-- Kelemahaan dari metode *Content Based Filtering* adalah setiap judul harus dilabel genre secara tepat. Jika ada judul yang sebenarnya memiliki genre yang sama, tapi karena kesalahan input label, sehingga diberi label genre yang berbeda, maka sistem rekomendasi ini kemungkinan besar tidak akan merekomendasikan film yang salah label tersebut. Selain dari itu, metode *Content Based Filtering* cenderung memberikan sistem rekomendasi yang monoton (tidak ada efek surprise), karena kemungkinan besar hanya akan merekomendasikan film yang bergenre itu-itu saja.
-- Kelebihan dari metode *Collaborative Filtering* adalah metode ini dapat memberikan rekomendasi film-film tanpa melabeli film terlebih dahulu, karena sistem rekomendasi akan mencari kesamaan perilaku antara suatu user dengan user lainnya. Selain dari itu, sistem rekomendasi ini dapat memberikan efek surprise, karena memberikan rekomendasi film dengan genre berbeda, namun tetap memperhatikan minat User.
-- Kelemahan dari metode *Collaborative Filtering*, yaitu sistem membutuhkan banyak input/feedback dari User agar sistem dapat berfungsi secara baik.
-- Berdasarkan uraian tersebut, dengan menggabungkan dua metode sistem rekomendasi (Content Based Filtering dan Collaborative Filtering), maka metode tersebut dapat melengkapi serta menambah keberagaman dalam pemberian rekomendasi film bagi User.  
+  
 
   
   
 ## Evaluation
-  
-Pada tahap ini saya menggunakan metrik root mean squared error (RMSE) dimana metode estimasi yang mempunyai Root Mean Square Error (RMSE) lebih kecil dikatakan lebih akurat daripada metode estimasi yang mempunyai Root Mean Square Error (RMSE) lebih besar. Rumus dari RMSE sebagai berikut:
+    
+Saya menggunakan dua metrik evaluasi yang digunakan untuk mengukur kinerja model pada collaborative filtering, yang pertama menggunakan metrik Root Mean Squared Error (RMSE) dan metrik Accuracy, berikut penjelasannya :
+    
+1.  Root Mean Squared Error (RMSE) merupakan besarnya tingkat kesalahan hasil prediksi, dimana metode estimasi yang mempunyai Root Mean Square Error (RMSE) lebih kecil dikatakan lebih akurat daripada metode estimasi yang mempunyai Root Mean Square Error (RMSE) lebih besar. Rumus dari RMSE sebagai berikut:
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/9.jpg?raw=true" height=auto alt="pie-chart">
@@ -370,16 +362,17 @@ Pada tahap ini saya menggunakan metrik root mean squared error (RMSE) dimana met
   
 Pada Gambar 18, merupakan rumus untuk mencari nilai Root Mean Square Error (RMSE)
   
-  
+Kemudian saya visualisasikan metrik tersebut menggunakan plot dari library  
 
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/8.png?raw=true" height=auto alt="pie-chart">
 </p>  
 <p align="center">Gambar 19. model_metrics</p>
 
-Pada Gambar 19, merupakan hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error  
+Pada Gambar 19, Dari plot di atas dapat kita memperoleh nilai error akhir sebesar sekitar 0.40 dan error pada data validasi kurang dari 0.15. Nilai tersebut cukup bagus untuk sistem rekomendasi.  
   
-Nilai RMSE yang didapatkan pada hasil pelatihan model setelah 100 epoch, yaitu:
+2.  Mean Squared Error (MSE). 
+    Teknik ini menghitung selisih rata-rata nilai sebenarnya dengan nilai prediksi. Berikut kode programnya :
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss6.png?raw=true" height=auto alt="pie-chart">
