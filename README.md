@@ -70,16 +70,17 @@ Menurut jurnal [“Sistem REKOMENDASI BUKU MENGGUNAKAN METODE ITEM-BASED COLLABO
 
 Banyaknya jumlah buku membuat pembaca terkadang kesulitan dalam menentukan buku yang hendak mereka baca selanjutnya.Terkadang dijumpai pembaca yang hanya ingin membaca buku-buku yang dengan reputasi penjualan terbaik. Ada pula pembaca yang hanya ingin membaca buku yang mirip dengan buku-buku yang pernah dibaca sebelumnya. Tidak jarang juga ditemui pembaca yang menentukan buku-buku yang akan dibaca selanjutnya berdasarkan rating dari buku-buku yang telah dilihatnya.
 
-Oleh karena itu, Sistem rekomendasi memberikan solusi terhadap permasalahan dalam menentukan buku yang belum pernah dibaca oleh pengguna. Sehingga, pada proyek ini saya membuat rekomendasi buku yang ditujukan untuk merekomendasikan pengguna dalam memilih buku yang ingin dibaca. Pada dataset ini saya menggunakan data ‘rating’ dimana berisi informasi dari rating buku, ‘Book’ yang berisi data-data buku dan 'user' yang berisi data-data pengguna. Pada rating ini terdiri dari beberapa penilaian pengguna terhadap salah satu buku dimana beberapa buku memiliki banyak penilaian rating dan beberapa buku memiliki sedikit penilaian rating oleh pengguna [3].
+    
+**Alasan Pembuatan Proyek dan Referensi Terkait Proyek**:    
+-  Proyek Sistem rekomendasi ini sangat penting untuk dikembangkan. Alasannya, Untuk memberikan memberikan solusi terhadap permasalahan dalam menentukan buku yang belum pernah dibaca oleh pengguna. Sehingga, maka diperlukan sistem yang mampu memberikan rekomendasi - rekomendasi buku yang menarik sesuai minat pengguna. pengguna yang merasa puas terhadap fitur yang tersedia dalam website, akan terus berlangganan terhadap website yang dimiliki [3].
    
+-  Referensi yang relevan terkait proyek sistem rekomendasi ini, yaitu sebagai berikut:
 
-Referensi:
-
-[1]  [Buku](https://id.wikipedia.org/wiki/Buku)
+[1]  [Sistem Rekomendasi Buku Menggunakan Metode Item-Based Collaborative Filtering](https://id.wikipedia.org/wiki/Buku)
     
-[2]  [SISTEM REKOMENDASI BUKU MENGGUNAKAN METODE ITEM-BASED COLLABORATIVE FILTERING](http://eprints.undip.ac.id/65823/1/laporan_24010311130044_1.pdf) 
+[2]  [Sistem Rekomendasi Buku Menggunakan Metode Item-Based Collaborative Filtering](https://ejournal.undip.ac.id/index.php/jmasif/article/view/31482/17636)
     
-[3]  [Metode Penelitian Sosial](http://repositori.uin-alauddin.ac.id/23278/1/Buku_Metode%20Penelitian%20Sosial%20survey.pdf)
+[3]  [A New Evaluation Criterion for Recommender Systems](https://link.springer.com/article/10.1023/B:ELEC.0000045973.51289.8c)
 
 ## Business Understanding
 
@@ -112,7 +113,8 @@ Collaborative Filtering.
 <p align='center'>
     <img src="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss.png?raw=true" alt="datasets">
 </p>
-Gambar 1. Book Recommendation Dataset
+<p align="center">Gambar 1. Book Recommendation Dataset</p>    
+
 
     
 Pada Gambar 1, Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommendation Dataset dengan 271360 records data Books, 278858 records data Users dan 1149780 records data Ratings. Dataset ini bersifat open-source yang dipubilkasikan oleh MÖBIUS melalui platform [Kaggle: Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset). Topik dari datasetnya adalah Books yang berformat csv, Ratings yang berformat csv, dan User yang berformat csv (comma-separated values) dengan ukuran 107 MB.
@@ -166,7 +168,7 @@ Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Anal
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss1.png?raw=true" height=auto alt="pie-chart">
 </p>
-Gambar 2. Gabungan dataset Books dan dataset Ratings
+<p align="center">Gambar 2. Gabungan dataset Books dan dataset Ratings</p>
 
     
 Pada Gambar 2, saya menggabungkan dataset Books dan dataset Ratings itu menjadi satu untuk memudahkan kualifikasi   
@@ -175,7 +177,7 @@ Pada Gambar 2, saya menggabungkan dataset Books dan dataset Ratings itu menjadi 
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss2.png?raw=true" height=auto alt="pie-chart">
 </p> 
-Gambar 3. Gabungan dataset Ratings dan dataset Users
+<p align="center">Gambar 3. Gabungan dataset Ratings dan dataset Users</p>
 
     
 Pada Gambar 3, saya juga menggabungkan dataset dataset Ratings dan dataset Users itu menjadi satu untuk memudahkan kualifikasi       
@@ -185,7 +187,7 @@ Pada data understanding saya membuat barplot yang berjudul "10 Tahun terbanyak p
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/2.png?raw=true" height=auto alt="pie-chart">
 </p>
-Gambar 4. Hasil Visualisasi 10 Tahun terbanyak publikasi
+<p align="center">Gambar 4. Hasil Visualisasi 10 Tahun terbanyak publikasi</p>
     
     
 Pada Gambar 4, memuat tahun - tahun publikasi terbanyak ada di antara tahun 1994 hingga tahun 2003.
@@ -196,7 +198,7 @@ Untuk menampilkan "Jumlah Rating Buku yang Diberikan Pengguna" saya menggunakan 
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/333.png?raw=true" height=auto alt="pie-chart">
 </p>    
-Gambar 5. Hasil Visualisasi Jumlah Rating Buku yang Diberikan Pengguna
+<p align="center">Gambar 5. Hasil Visualisasi Jumlah Rating Buku yang Diberikan Pengguna</p>
     
     
 Pada Gambar 5, dapat dilihat bahwa jumlah Buku terbanyak terdapat pada Book Rating pertama    
@@ -206,7 +208,7 @@ Untuk menampilkan "10 penulis terpopuler" saya menggunakan barplot dimana menamp
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/4.png?raw=true" height=auto alt="pie-chart">
 </p>
-Gambar 6. Hasil Visualisasi 10 penulis terpopuler
+<p align="center">Gambar 6. Hasil Visualisasi 10 penulis terpopuler</p>
     
     
 Pada Gambar 6, dapat disimpulkan penulis dengan nama “James Patterson” menjadi peringkat pertama pada penulis terpopuler serta peringkat dua dan peringkat ketiga adalah penulis dengan nama “John Grisham” dan Mary Higgins Clark”. Namun bila di lihat dengan seksama penulis peringkat kedelapan dan kesembilan memiliki jumlah yang sama.
@@ -216,7 +218,7 @@ Untuk menampilkan "10 Lokasi Penulis Terpopuler" saya menggunakan barplot dimana
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/5.png?raw=true" height=auto alt="pie-chart">
 </p>    
-Gambar 7. Hasil Visualisasi 10 Lokasi Penulis Terpopuler
+<p align="center">Gambar 7. Hasil Visualisasi 10 Lokasi Penulis Terpopuler</p>
     
     
 Pada Gambar 7, dapat disimpulkan penulis lokasi "minneapolis, minnesota, usa" menjadi peringkat pertama pada lokasi penulis terpopuler serta peringkat dua dan peringkat ketiga adalah lokasi “porto, porto, portugal” dan “dumas, arkansas, usa”.     
@@ -226,7 +228,7 @@ Selanjutnya, saya menggunakan barplot kembali untuk menampilkan "10 publisher te
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/6.png?raw=true" height=auto alt="pie-chart">
 </p>    
-Gambar 8. Hasil Visualisasi 10 publisher teratas
+<p align="center">Gambar 8. Hasil Visualisasi 10 publisher teratas</p>
     
     
 Pada Gambar 8, dapat disimpulkan bahwa publisher yang berada di peringkat atas yaitu “Ballantine Books” dengan jumlah yang lebih banyak dibandingkan dengan publisher yang lain. Namun bila dilihat kembali pada peringkat sembilan dan sepuluh memiliki jumlah yang sama.
@@ -236,7 +238,7 @@ Terakhir, saya membuat rata-rata rating dengan buku terbanyak dibaca dimana untu
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/7.png?raw=true" height=auto alt="pie-chart">
 </p>
-Gambar 9. Rata-rata rating dengan buku terbanyak dibaca
+<p align="center">Gambar 9. Rata-rata rating dengan buku terbanyak dibaca</p>
     
     
 Pada Gambar 9, dapat bahwa buku dengan judul “A Painted House” memiliki rating terbanyak dari pengguna dibandingkan buku yang lainnya.    
@@ -253,7 +255,7 @@ Dilakukan pengecekan data null dengan menggunakan fungsi isnull dimana terdiri d
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7.png?raw=true" height=auto alt="pie-chart">
 </p>    
-Gambar 10. check missing values dari 5 dataset
+<p align="center">Gambar 10. check missing values dari 5 dataset</p>
 
     
 Pada Gambar 10, Data tidak memiliki null sehingga tidak perlu dilakukan teknik penghapusan data null, teknik dilakukan bila disalah satu data terdapat nilai null.    
@@ -408,4 +410,3 @@ Berdasarkan dari hasil visualisasi metrik RMSE , MSE dari pada data train adalah
   
 [3]  G. Indah Marthasari, Y. Azhar, and D. Kurnia Puspitaningrum, “SISTEM REKOMENDASI PENYEWAAN PERLENGKAPAN PESTA MENGGUNAKAN COLLABORATIVE FILTERING DAN PENGGALIAN ATURAN ASOSIASI,” Jurnal SimanteC, vol. 5, no. 1, pp. 1–8, Dec. 2015.
   
-[4]  Tilawah, S. (2020, May 31). Adam Optimizer. Medium
