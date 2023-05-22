@@ -32,7 +32,7 @@
 </div>
 
 <p align='center'>
-    <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/buku.jfif?raw=true" alt="Buku">
+    <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/1.png?raw=true" alt="Buku">
 </p>
 
     
