@@ -66,23 +66,15 @@ Buku adalah kumpulan/himpunan kertas atau lembaran yang tertulis atau mengandung
 19.  Atlas
 20.  Babad
 
-- Diabetes tipe 1. 
-  
-  jenis ini adalah penyakit autoimun, artinya sistem imun tubuh akan menyerang dirinya sendiri. Pada kondisi ini,  kadar insulin yang rendah bahkan tidak ada sama sekali akibat kerusakan sel beta pankreas . 
-- Diabetes tipe 2. 
-  
-  Pada jenis diabetes ini, kelenjar pankreas yang tidak dapat mencukupi kebutuhan insulin pada tubuh sehingga insulin tidak berfungsi dengan optimal [2]. 
+Banyaknya jumlah buku membuat pembaca terkadang kesulitan dalam menentukan buku yang hendak mereka baca selanjutnya.Terkadang dijumpai pembaca yang hanya ingin membaca buku-buku yang dengan reputasi penjualan terbaik. Ada pula pembaca yang hanya ingin membaca buku yang mirip dengan buku-buku yang pernah dibaca sebelumnya. Tidak jarang juga ditemui pembaca yang menentukan buku-buku yang akan dibaca selanjutnya berdasarkan rating dari buku-buku yang telah dilihatnya. Semakin tinggi rating dari buku tersebut, semakin tertarik pula pembaca untuk membacanya. Semakin rendah rating dari buku tersebut, maka pembaca cenderung enggan untuk membacanya. Tinggi rendahnya rating tersebut mempengaruhi buku-buku yang akan direkomendasikan. Nilai kemiripan antar buku dan rating buku dapat dijadikan landasan untuk memberikan rekomendasi buku kepada pembaca.
 
-menurut Organisasi Kesehatan Dunia (WHO), Jumlah penderita Diabetes terus meningkat dan tercatat saat ini mencapai 422 juta orang di dunia - empat kali lebih banyak dari pada 30 tahun lalu. Menurut British National Health Service, badan kesehatan Inggris, gejala diabetes tipe 1 cenderung muncul saat anak-anak atau remaja, serta lebih parah. Orang yang lebih berisiko terkena diabetes tipe 2 adalah kelompok umur di atas 40 tahun (atau di atas 25 tahun di antara orang Asia selatan). Ikatan Dokter Anak Indonesia (IDAI) menyebutkan, kasus diabetes anak pada 2023 meningkat 70 kali lipat sejak 2010. Data IDAI menunjukan, pasien diabetes anak umumnya berusia 10 sampai 14 tahun dengan jumlah sekitar 46 persen dari total angka yang dilaporkan. Namun, banyak orang tidak menyadari hal ini. Dari permasalahan tersebut, dapat dilihat bahwa perlu adanya sistem predictive untuk mendeteksi penyakit Diabetes ini [3]. 
-
-Ada banyak sistem predictive yang berkembang, salah satunya dengan pendekatan klasifikasi. Klasifikasi merupakan proses pencarian sekumpulan model atau fungsi yang menggambarkan dan membedakan kelas data. Tujuan dari klasifikasi adalah untuk memprediksi kelas dari suatu objek yang belum diketahui kelasnya. Klasifikasi sendiri memiliki dua proses yaitu membangun model klasifikasi dari sekumpulan kelas data yang sudah didefinisikan sebelumnya (training data) dan menggunakan model tersebut untuk klasifikasi data test serta mengukur akurasi dari model (testing data). Dalam prosesnya, klasifikasi memiliki empat komponen, yaitu kelas merupakan variabel terikat yang merepresentasikan label yang terdapat pada objek. kedua, predictor adalah variabel bebas yang direpresentasikan oleh atribut. ketiga, data training adalah set data yang digunakan untuk menentukan kelas yang cocok berdasarkan predictor. terakhir, data test adalah set data baru yang akan diklasifikasikan oleh model yang telah dibuat sebelumnya. Pada proyek machine learning ini, klasifikasi akan digunakan untuk membuat model machine learning [4].
+Oleh karena itu, Sistem rekomendasi memberikan solusi terhadap permasalahan dalam menentukan buku yang belum pernah dibaca oleh pengguna. Sehingga, pada proyek ini saya membuat rekomendasi buku yang ditujukan untuk merekomendasikan pengguna dalam memilih buku yang ingin dibaca. Pada dataset ini saya menggunakan data ‘rating’ dimana berisi informasi dari rating buku dan ‘Book’ yang berisi data-data buku. Pada rating ini terdiri dari beberapa penilaian pengguna terhadap salah satu buku dimana beberapa buku memiliki banyak penilaian rating dan beberapa buku memiliki sedikit penilaian rating oleh pengguna.
 
 Referensi:
 
-[1] [Diabetes](https://www.halodoc.com/kesehatan/diabetes) 
-[2] [Diabetes :Penderita di Indonesia bisa mencapai 30 juta orang pada tahun 2030](https://p2ptm.kemkes.go.id/tag/diabetes-penderita-di-indonesia-bisa-mencapai-30-juta-orang-pada-tahun-2030#:~:text=Jumlah%20penderita%20terus%20meningkat%20dan,Organisasi%20Kesehatan%20Dunia%20(WHO).) 
-[3] [Kasus Diabetes Anak Meningkat 70 Kali Lipat pada 2023](https://ameera.republika.co.id/berita/rrbbrf425/kasus-diabetes-anak-meningkat-70-kali-lipat-pada-2023)
-[4] [Data Mining Techniques: Types of Data, Methods, Applications](https://www.upgrad.com/blog/data-mining-techniques/) 
+[1] [Buku]([https://www.halodoc.com/kesehatan/diabetes](https://id.wikipedia.org/wiki/Buku)) 
+[2] [SISTEM REKOMENDASI BUKU MENGGUNAKAN METODE ITEM-BASED COLLABORATIVE FILTERING](http://eprints.undip.ac.id/65823/1/laporan_24010311130044_1.pdf) 
+[3] [Metode Penelitian Sosial](http://repositori.uin-alauddin.ac.id/23278/1/Buku_Metode%20Penelitian%20Sosial%20survey.pdf)
 
 ## Business Understanding
 
