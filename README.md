@@ -233,14 +233,22 @@ Dilakukan pengecekan data null dengan menggunakan fungsi isnull dimana terdiri d
 Selanjutnya dilakukan persiapan penghapusan data duplikat, dengan membuat variable baru dengan nama ‘data_prep’ yang berisi dataframe ‘data_train’ yang diurutkan berdasarkan ‘ISBN’ dan nama ‘data_prus’ yang berisi dataframe ‘data_using’ yang diurutkan berdasarkan ‘UserID’. Berikut ini merupakan hasil dari persiapan penghapusan data duplikat: 
     
 <p align='center'>
-  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7.png?raw=true" height=auto alt="pie-chart">
-</p>    
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss8.png?raw=true" height=auto alt="pie-chart">
+</p>
+    
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss9.png?raw=true" height=auto alt="pie-chart">
+</p>
     
 Kemudian, setelah dilakukan persiapan dilanjutkan dengan penghapusan data duplikat menggunakan fungsi drop_duplicates. Penghapusan data duplikat berguna bila data train dan data test ada yang sama maka akan dihasilkan jumlah rows berkurang ketika dilakukan penghapusan data duplikat. 
     
 <p align='center'>
-  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7.png?raw=true" height=auto alt="pie-chart">
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss81.png?raw=true" height=auto alt="pie-chart">
 </p>
+
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss91.png?raw=true" height=auto alt="pie-chart">
+</p>    
     
 -  Melakukan konversi data series dan pembuatan dictionary
 
@@ -272,7 +280,7 @@ Kemudian, dilakukan pembagian data train dan validasi dengan komposisi 90:10 dim
   
   
 
-## Modeling
+## Modeling and Results.
 Pada tahap ini saya menggunakan model collaborative filtering dimana menggunakan metode deep learning yang bertujuan menghasilkan rekomendasi buku.
 
 1. Tahap awal yang dilakukan yaitu melakukan proses embedding terhadap data user dan book. Lalu dilanjutkan dengan operasi perkalian dot product antara embedding user dan book serta menambahkan bias untuk kedua data. Skor kecocokan di tetapkan dalam skala [0,1] dengan fungsi aktivasi sigmoid
@@ -284,7 +292,18 @@ Pada tahap ini saya menggunakan model collaborative filtering dimana menggunakan
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss5.png?raw=true" height=auto alt="pie-chart">  
   
-Pada gambar diatas merupakan hasil rekomendasi dari model collaborative filtering dimana user dengan id 183. Kita dapat melihat bahwa terdapat dua perbandingan yaitu Buku dengan peringkat tinggi dari pengguna yaitu ‘Echoes : Maeve Binchy’ dan ‘Kissing in Manhattan : DAVID SCHICKLER’ Serta 10 Rekomendasi Buku Teratas yang salah satunya yaitu ‘The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS’.
+Pada gambar diatas merupakan hasil rekomendasi dari model collaborative filtering dimana user dengan id 882. Kita dapat melihat bahwa Buku dengan peringkat tinggi dari pengguna  yaitu ‘The Da Vinci Code : Dan Brown’ Serta 10 Rekomendasi Buku Teratas yang salah satunya yaitu ‘The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS’.
+
+**Kelebihan dan Kekurangan Content Based Filtering dan Collaborative Filtering**: 
+- Untuk membuat sistem rekomendasi yang mampu memberikan rekomendasi yang tepat pada User, maka dalam proyek ini dibuat sistem rekomendasi yang menerapkan dua metode/algoritma, yaitu metode Content Based Filtering dan Collaborative Filtering.
+- Dengan metode *Content Based Filtering*, User akan diberikan rekomendasi film berdasarkan kesamaan genre dari film yang pernah ditontonnya.
+- Kelebihan dari metode *Content Based Filtering* adalah metode ini dapat memberikan rekomendasi film-film yang baru dirilis kepada User lebih cepat, tanpa terlebih dahulu menunggu penilaian/rating User lain. Alasannya, karena sistem rekomendasi ini memberikan rekomendasi sesuai dengan kesamaan genre antar suatu film, tanpa terpengaruh penilaian/rating user lain.
+- Kelemahaan dari metode *Content Based Filtering* adalah setiap judul harus dilabel genre secara tepat. Jika ada judul yang sebenarnya memiliki genre yang sama, tapi karena kesalahan input label, sehingga diberi label genre yang berbeda, maka sistem rekomendasi ini kemungkinan besar tidak akan merekomendasikan film yang salah label tersebut. Selain dari itu, metode *Content Based Filtering* cenderung memberikan sistem rekomendasi yang monoton (tidak ada efek surprise), karena kemungkinan besar hanya akan merekomendasikan film yang bergenre itu-itu saja.
+- Kelebihan dari metode *Collaborative Filtering* adalah metode ini dapat memberikan rekomendasi film-film tanpa melabeli film terlebih dahulu, karena sistem rekomendasi akan mencari kesamaan perilaku antara suatu user dengan user lainnya. Selain dari itu, sistem rekomendasi ini dapat memberikan efek surprise, karena memberikan rekomendasi film dengan genre berbeda, namun tetap memperhatikan minat User.
+- Kelemahan dari metode *Collaborative Filtering*, yaitu sistem membutuhkan banyak input/feedback dari User agar sistem dapat berfungsi secara baik.
+- Berdasarkan uraian tersebut, dengan menggabungkan dua metode sistem rekomendasi (Content Based Filtering dan Collaborative Filtering), maka metode tersebut dapat melengkapi serta menambah keberagaman dalam pemberian rekomendasi film bagi User.  
+
+  
   
 ## Evaluation
   
@@ -293,22 +312,29 @@ Pada tahap ini saya menggunakan metrik root mean squared error (RMSE) dimana met
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/9.jpg?raw=true" height=auto alt="pie-chart">
   
-Pada gambar dibawah ini merupakan hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error
+hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error
 
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/8.png?raw=true" height=auto alt="pie-chart">  
 
+Nilai RMSE yang didapatkan pada hasil pelatihan model setelah 100 epoch, yaitu:
+  
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss6.png?raw=true" height=auto alt="pie-chart">
   
 Hasil dari kode program di atas yakni : MSE dari pada data train = 2.134168001215646e-05 MSE dari pada data validation = 8.878335751528855e-05
   
+Metrik                        | Nilai   |
+----------------------------- | ------- |
+root_mean_squared_error       | 0.1512  |
+val_root_mean_squared_error   | 0.2980  |
   
 ## Conclusion
 Conclusion
 
-Berdasarkan dari hasil visualisasi metrik RMSE , model mendapatkan error yang cukup kecil yaitu memiliki nilai error akhir di 0.338 untuk data yang baru. Berdasarkan hal tersebut, pembuatan model dengan pendekatan Collaborative Filtering ini dapat digunakan untuk merekomendasikan buku yang belum pernah dibaca atau mungkin disukai pengguna. Selain itu, kini pengguna dapat mempersingkat waktu pencarian buku dengan memanfaatkan hasil rekomendasi yang telah diberikan oleh model.
-
+Berdasarkan dari hasil visualisasi metrik RMSE , MSE dari pada data train adalah 2.134168001215646e-05 dan MSE dari pada data validation adalah 8.878335751528855e-05. berdasarkan hal tersebut, pembuatan model dengan pendekatan Collaborative Filtering ini dapat digunakan untuk merekomendasikan buku yang belum pernah dibaca atau mungkin disukai pengguna. Selain itu, kini pengguna dapat mempersingkat waktu pencarian buku dengan memanfaatkan hasil rekomendasi yang telah diberikan oleh model. 
+  
+  
 ## Daftar Pustaka
 
 [1]  Moh. Irfan, D. A. C, and H. F. R, “SISTEM REKOMENDASI: BUKU ONLINE DENGAN METODE COLLABORATIVE FILTERING,” JURNAL TEKNOLOGI TECHNOSCIENTIA, vol. 7, no. 1, pp. 76–84, Aug. 2014.
