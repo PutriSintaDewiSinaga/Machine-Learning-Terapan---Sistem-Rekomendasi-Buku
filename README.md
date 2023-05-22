@@ -155,8 +155,17 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
     
 Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Analysis) yang menjelaskan variabel-variabel yang sudah dijelaskan sebelumnya. Dikarenakan ketiga dataset yang kita gunakan merupakan dataset dalam jumlah yang banyak yakni lebih dari 200.000, maka di pada proses ini saya hanya mengambil 12.000 data pertama dari setiap variabel di atas dalam pembuatan sistem rekomendasi ini.
 
- proyek ini saya menggabungkan dataset Books dan dataset Ratings itu menjadi satu sehingga menghasilkan sebagai berikut:
+proyek ini saya menggabungkan dataset Books dan dataset Ratings itu menjadi satu sehingga menghasilkan sebagai berikut:
     
+    <p align='center'>
+      <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss1.png?raw=true" height=auto alt="pie-chart">
+</p>
+    
+saya juga menggabungkan dataset Ratings dan dataset Users itu menjadi satu sehingga menghasilkan sebagai berikut:
+    
+    <p align='center'>
+      <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss2.png?raw=true" height=auto alt="pie-chart">
+</p> 
     
 ### Visualization & Analysis
 
