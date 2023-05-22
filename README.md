@@ -317,7 +317,8 @@ Setelah melakukan proses diatas maka masuk ke proses encoding data. Dimana pada 
 Untuk tahap ini dilakukan pengacakan dataset agar distribusi yang dilakukan menjadi random. Berikut ini merupakan hasil dari tahapan tersebut: 
   
 <p align='center'>
-  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss4.png?raw=true" height=auto alt="pie-chart"> 
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss4.png?raw=true" height=auto alt="pie-chart">
+</p>  
 Gambar 14. Mengacak dataset  
   
 Pada Gambar 14, telah dilakukan pengacakan dataset 
@@ -337,7 +338,9 @@ Pada tahap ini saya menggunakan model collaborative filtering dimana menggunakan
 3. Tahap akhir yaitu dengan mengambil sampel user secara acak dan definisikan variabel book_not_visited yang merupakan daftar book yang belum pernah dikunjungi oleh pengguna. Variabel book_not_visited diperoleh dengan menggunakan operator bitwise (~) pada variabel book_visited_by_user. Kemudian dalam memperoleh rekomendasi buku menggunakan fungsi model.predict() dari library Keras.
 
 <p align='center'>
-  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7a.png?raw=true" height=auto alt="pie-chart"> Gambar 15. Hasil Sistem Rekomendasi Collaborative Filtering 
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7a.png?raw=true" height=auto alt="pie-chart">
+</p>  
+Gambar 15. Hasil Sistem Rekomendasi Collaborative Filtering 
   
 Pada Gambar 15, merupakan hasil rekomendasi dari model collaborative filtering dimana user dengan id 882. Kita dapat melihat bahwa Buku dengan peringkat tinggi dari pengguna  yaitu ‘The Da Vinci Code : Dan Brown’ Serta 10 Rekomendasi Buku Teratas yang salah satunya yaitu ‘The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS’.
 
@@ -358,19 +361,29 @@ Pada tahap ini saya menggunakan metrik root mean squared error (RMSE) dimana met
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/9.jpg?raw=true" height=auto alt="pie-chart">
+Gambar 16. Rumus Root Mean Square Error (RMSE)
   
-hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error
+Pada Gambar 16, merupakan rumus untuk mencari nilai Root Mean Square Error (RMSE)
+  
+  
 
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/8.png?raw=true" height=auto alt="pie-chart">  
+Gambar 17. model_metrics
 
+Pada Gambar 17, merupakan hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error  
+  
 Nilai RMSE yang didapatkan pada hasil pelatihan model setelah 100 epoch, yaitu:
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss6.png?raw=true" height=auto alt="pie-chart">
+Gambar 18. Root Mean Square Error (RMSE)  
+
   
-Hasil dari kode program di atas yakni : MSE dari pada data train = 2.134168001215646e-05 MSE dari pada data validation = 8.878335751528855e-05
+Pada Gambar 18, Hasil dari kode program di atas yakni : MSE dari pada data train = 2.134168001215646e-05 MSE dari pada data validation = 8.878335751528855e-05
+
   
+Tabel 1. Evaluasi root_mean_squared_error dan val_root_mean_squared_error  
 Metrik                        | Nilai   |
 ----------------------------- | ------- |
 root_mean_squared_error       | 0.1512  |
