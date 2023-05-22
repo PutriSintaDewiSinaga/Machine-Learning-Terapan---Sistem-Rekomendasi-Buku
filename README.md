@@ -113,38 +113,38 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
     
 -  Dataset yang pertama yakni 'Users' yang memiliki jumlah 278858 data dan 3 kolom, yakni :
     
-i.   Kolom 'User-ID', berisi ID pengguna dari toko buku online
+   i.   Kolom 'User-ID', berisi ID pengguna dari toko buku online
     
-ii.  Kolom 'Location', berisi lokasi pengguna.
+   ii.  Kolom 'Location', berisi lokasi pengguna.
     
-iii. Kolom 'Age', berisi usia pengguna.
+   iii. Kolom 'Age', berisi usia pengguna.
 
-- Dataset yang kedua yakni 'Books' yang memiliki jumlah 278858 data dan memiliki 8 kolom, diantaranya :
+-  Dataset yang kedua yakni 'Books' yang memiliki jumlah 278858 data dan memiliki 8 kolom, diantaranya :
     
-i.    Kolom 'ISBN', merupakan identifikasi dari masing-masing buku.
+   i.    Kolom 'ISBN', merupakan identifikasi dari masing-masing buku.
     
-ii.   Kolom 'Book-Title', merupakan judul buku.
+   ii.   Kolom 'Book-Title', merupakan judul buku.
     
-iii.  Kolom 'Book-Author', merupakan penulis buku.
+   iii.  Kolom 'Book-Author', merupakan penulis buku.
     
-iv.   Kolom 'Year-Of-Publication', merupakan tahun dipublikasikannya buku.
+   iv.   Kolom 'Year-Of-Publication', merupakan tahun dipublikasikannya buku.
     
-v.    Kolom 'Publisher', merupakan penerbit buku.
+   v.    Kolom 'Publisher', merupakan penerbit buku.
     
-vi.   Kolom 'Image-URL-S', marupakan URL gambar cover buku dalam ukuran S(Small)
+   vi.   Kolom 'Image-URL-S', marupakan URL gambar cover buku dalam ukuran S(Small)
     
-vii.  Kolom 'Image-URL-M', marupakan URL gambar cover buku dalam ukuran M(Medium)
+   vii.  Kolom 'Image-URL-M', marupakan URL gambar cover buku dalam ukuran M(Medium)
     
-viii. Kolom 'Image-URL-L', marupakan URL gambar cover buku dalam ukuran L(Large)
+   viii. Kolom 'Image-URL-L', marupakan URL gambar cover buku dalam ukuran L(Large)
     
 
-- Dataset yang kedua yakni 'Ratings' yang memiliki jumlah 1149780 data dan memiliki 3 kolom, berikut penjelasan mengenai kolom-kolomnya :
+-  Dataset yang kedua yakni 'Ratings' yang memiliki jumlah 1149780 data dan memiliki 3 kolom, berikut penjelasan mengenai kolom-kolomnya :
     
-i.   Kolom 'User-ID', yang berisi ID dari user yang memberikan rating terhadap buku.
+   i.   Kolom 'User-ID', yang berisi ID dari user yang memberikan rating terhadap buku.
     
-ii.  Kolom 'ISBN', merupakan identifikasi buku atau nomor buku yang diberi rating oleh user
+   ii.  Kolom 'ISBN', merupakan identifikasi buku atau nomor buku yang diberi rating oleh user
     
-iii. Kolom 'Book-Rating', berisi nilai Rating dari buku, skala yang ada dalam rating ini yakni dari 0-10.
+   iii. Kolom 'Book-Rating', berisi nilai Rating dari buku, skala yang ada dalam rating ini yakni dari 0-10.
     
     
 Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Analysis) yang menjelaskan variabel-variabel yang sudah dijelaskan sebelumnya. Dikarenakan ketiga dataset yang kita gunakan merupakan dataset dalam jumlah yang banyak yakni lebih dari 200.000, maka di pada proses ini saya hanya mengambil 12.000 data pertama dari setiap variabel di atas dalam pembuatan sistem rekomendasi ini.
