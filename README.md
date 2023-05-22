@@ -176,7 +176,7 @@ Pada data understanding saya membuat barplot yang berjudul "10 Tahun terbanyak p
 Untuk menampilkan "10 ID Pengguna terpopuler" saya menggunakan barplot dimana menampilkan count dan UserID. Berikut merupakan tampilan dari barplot 10 ID Pengguna terpopuler:
     
 <p align='center'>
-  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/3.png?raw=true" height=auto alt="pie-chart">
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/333.png?raw=true" height=auto alt="pie-chart">
 </p>    
 
     
