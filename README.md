@@ -104,21 +104,34 @@ Collaborative Filtering.
 -  Collaborative filtering bergantung pada pendapat komunitas pengguna. Ia tidak memerlukan atribut untuk setiap itemnya seperti pada sistem berbasis konten. Kelebihan dari teknik ini yakni dapat membantu pengguna menemukan minat baru. Kekurangannya yakni tidak dapat menangani item baru/fresh. Jadi, jika item tidak terlihat selama pelatihan, sistem tidak dapat melakukan proses embedding untuk item tersebut dan tidak dapat mengkueri model dengan item ini.
 
 ## Data Understanding
-Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommendation Dataset dengan 271360 records data Books, 278858 records data Ratings dan 1149780 records data User. Dataset ini bersifat open-source yang dipubilkasikan oleh MÖBIUS melalui platform [Kaggle: Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset). Topik dari datasetnya adalah Books yang berformat csv, Ratings yang berformat csv, dan User yang berformat csv (comma-separated values) dengan ukuran 107 MB.
+Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommendation Dataset dengan 271360 records data Books, 278858 records data Users dan 1149780 records data Ratings. Dataset ini bersifat open-source yang dipubilkasikan oleh MÖBIUS melalui platform [Kaggle: Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset). Topik dari datasetnya adalah Books yang berformat csv, Ratings yang berformat csv, dan User yang berformat csv (comma-separated values) dengan ukuran 107 MB.
 
 <p align='center'>
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/Dataset.png?raw=true" alt="datasets">
+    <img src="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss.png?raw=true" alt="datasets">
 </p>
 
-### Variabel-variabel pada Diabetes Prediction Dataset:
-- age : Jenis kelamin mengacu pada jenis kelamin biologis seseorang (0 = Laki-laki, 1 = Perempuan).
-- gender : Usia penderita diabetes, usia berkisar antara 0-80 dalam kumpulan data.
-- body mass index (BMI) : Ukuran lemak tubuh berdasarkan berat dan tinggi badan.i
-- hypertension : kondisi medis di mana tekanan darah dalam arteri terus meningkat. (0 = Tidak Naik, 1 = Naik)
-- heart disease : Penyakit jantung. (0 = Tidak Penyakit Jantung, 1 = Penyakit Jantung).
-- smoking history : Riwayat merokok (4 = tidak saat ini,2 = sebelumnya,0 = Tidak Ada Info,3 = saat ini ,1 = tidak pernah,5 = pernah.
-- HbA1c level : Ukuran kadar gula darah rata-rata, Sebagian besar kadar HbA1c lebih dari 6,5% mengindikasikan diabetes
-- blood glucose level : jumlah glukosa dalam aliran darah pada waktu tertentu.
+    
+-  Dataset yang pertama yakni 'Users' yang memiliki jumlah 278858 data dan 3 kolom, yakni :
+i.   Kolom 'User-ID', berisi ID pengguna dari toko buku online
+ii.  Kolom 'Location', berisi lokasi pengguna.
+iii. Kolom 'Age', berisi usia pengguna.
+
+- Dataset yang kedua yakni 'Books' yang memiliki jumlah 278858 data dan memiliki 8 kolom, diantaranya :
+i.    Kolom 'ISBN', merupakan identifikasi dari masing-masing buku.
+ii.   Kolom 'Book-Title', merupakan judul buku.
+iii.  Kolom 'Book-Author', merupakan penulis buku.
+iv.   Kolom 'Year-Of-Publication', merupakan tahun dipublikasikannya buku.
+v.    Kolom 'Publisher', merupakan penerbit buku.
+vi.   Kolom 'Image-URL-S', marupakan URL gambar cover buku dalam ukuran S(Small)
+vii.  Kolom 'Image-URL-M', marupakan URL gambar cover buku dalam ukuran M(Medium)
+viii. Kolom 'Image-URL-L', marupakan URL gambar cover buku dalam ukuran L(Large)
+
+- Dataset yang kedua yakni 'Ratings' yang memiliki jumlah 1149780 data dan memiliki 3 kolom, berikut penjelasan mengenai kolom-kolomnya :
+i.   Kolom 'User-ID', yang berisi ID dari user yang memberikan rating terhadap buku.
+ii.  Kolom 'ISBN', merupakan identifikasi buku atau nomor buku yang diberi rating oleh user
+iii. Kolom 'Book-Rating', berisi nilai Rating dari buku, skala yang ada dalam rating ini yakni dari 0-10.
+    
+Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Analysis) yang menjelaskan variabel-variabel yang sudah dijelaskan sebelumnya. Dikarenakan ketiga dataset yang kita gunakan merupakan dataset dalam jumlah yang banyak yakni lebih dari 200.000, maka di pada proses ini saya hanya mengambil 12.000 data pertama dari setiap variabel di atas dalam pembuatan sistem rekomendasi ini.
 
 ### Visualization & Analysis
 
