@@ -32,5 +32,5 @@
 </div>
 
 <p align='center'>
-    <img src ="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/Diabetes%201.jpg?raw=true" alt="Diabetes">
+    <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/buku.jfif?raw=true" alt="Diabetes">
 </p>
