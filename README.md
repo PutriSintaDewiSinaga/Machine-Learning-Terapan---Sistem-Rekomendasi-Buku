@@ -391,6 +391,7 @@ Pada Gambar 20, Hasil dari kode program di atas yakni : MSE dari pada data train
 
   
 <p align="center">Tabel 1. Evaluasi root_mean_squared_error dan val_root_mean_squared_error</p> 
+    
 Metrik                        | Nilai   |
 ----------------------------- | ------- |
 root_mean_squared_error       | 0.1512  |
