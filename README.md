@@ -179,6 +179,7 @@ Untuk menampilkan "10 ID Pengguna terpopuler" saya menggunakan barplot dimana me
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/3.png?raw=true" height=auto alt="pie-chart">
 </p>    
 
+    
 Untuk menampilkan "10 penulis terpopuler" saya menggunakan barplot dimana menampilkan count dan nama penulis. Berikut merupakan tampilan dari barplot 10 penulis terpopuler:  
     
 <p align='center'>
