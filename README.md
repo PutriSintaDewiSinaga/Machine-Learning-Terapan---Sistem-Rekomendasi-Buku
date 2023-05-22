@@ -104,7 +104,7 @@ Collaborative Filtering.
 -  Collaborative filtering bergantung pada pendapat komunitas pengguna. Ia tidak memerlukan atribut untuk setiap itemnya seperti pada sistem berbasis konten. Kelebihan dari teknik ini yakni dapat membantu pengguna menemukan minat baru. Kekurangannya yakni tidak dapat menangani item baru/fresh. Jadi, jika item tidak terlihat selama pelatihan, sistem tidak dapat melakukan proses embedding untuk item tersebut dan tidak dapat mengkueri model dengan item ini.
 
 ## Data Understanding
-Dataset yang dipakai dalam proyek machine learning ini merupakan dataset anemia dengan 1421 records data. Dataset ini bersifat open-source yang dipubilkasikan oleh Biswa Ranjan Rao melalui platform [Kaggle: Diabetes prediction dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). Topik dari datasetnya adalah kesehatan yang berformat csv (comma-separated values) dengan ukuran 3.81 MB.
+Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommendation Dataset dengan 271360 records data Books, 278858 records data Ratings dan 1149780 records data User. Dataset ini bersifat open-source yang dipubilkasikan oleh MÖBIUS melalui platform [Kaggle: Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset). Topik dari datasetnya adalah Books yang berformat csv, Ratings yang berformat csv, dan User yang berformat csv (comma-separated values) dengan ukuran 107 MB.
 
 <p align='center'>
     <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/Dataset.png?raw=true" alt="datasets">
