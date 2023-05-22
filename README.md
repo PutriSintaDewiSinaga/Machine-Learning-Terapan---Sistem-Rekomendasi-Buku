@@ -73,7 +73,9 @@ Oleh karena itu, Sistem rekomendasi memberikan solusi terhadap permasalahan dala
 Referensi:
 
 [1]  [Buku]([https://www.halodoc.com/kesehatan/diabetes](https://id.wikipedia.org/wiki/Buku))
+    
 [2]  [SISTEM REKOMENDASI BUKU MENGGUNAKAN METODE ITEM-BASED COLLABORATIVE FILTERING](http://eprints.undip.ac.id/65823/1/laporan_24010311130044_1.pdf) 
+    
 [3]  [Metode Penelitian Sosial](http://repositori.uin-alauddin.ac.id/23278/1/Buku_Metode%20Penelitian%20Sosial%20survey.pdf)
 
 ## Business Understanding
