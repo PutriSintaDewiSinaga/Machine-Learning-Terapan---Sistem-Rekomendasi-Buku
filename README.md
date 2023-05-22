@@ -76,11 +76,11 @@ Banyaknya jumlah buku membuat pembaca terkadang kesulitan dalam menentukan buku 
    
 -  Referensi yang relevan terkait proyek sistem rekomendasi ini, yaitu sebagai berikut:
 
-[1]  [Sistem Rekomendasi Buku Menggunakan Metode Item-Based Collaborative Filtering](https://id.wikipedia.org/wiki/Buku)
+   [1]  [Buku](https://id.wikipedia.org/wiki/Buku)
     
-[2]  [Sistem Rekomendasi Buku Menggunakan Metode Item-Based Collaborative Filtering](https://ejournal.undip.ac.id/index.php/jmasif/article/view/31482/17636)
+   [2]  [Sistem Rekomendasi Buku Menggunakan Metode Item-Based Collaborative Filtering](https://ejournal.undip.ac.id/index.php/jmasif/article/view/31482/17636)
     
-[3]  [A New Evaluation Criterion for Recommender Systems](https://link.springer.com/article/10.1023/B:ELEC.0000045973.51289.8c)
+   [3]  [A New Evaluation Criterion for Recommender Systems](https://link.springer.com/article/10.1023/B:ELEC.0000045973.51289.8c)
 
 ## Business Understanding
 
