@@ -157,85 +157,75 @@ Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Anal
 
 proyek ini saya menggabungkan dataset Books dan dataset Ratings itu menjadi satu sehingga menghasilkan sebagai berikut:
     
-    <p align='center'>
-      <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss1.png?raw=true" height=auto alt="pie-chart">
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss1.png?raw=true" height=auto alt="pie-chart">
 </p>
     
 saya juga menggabungkan dataset Ratings dan dataset Users itu menjadi satu sehingga menghasilkan sebagai berikut:
     
-    <p align='center'>
-      <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss2.png?raw=true" height=auto alt="pie-chart">
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss2.png?raw=true" height=auto alt="pie-chart">
 </p> 
     
-### Visualization & Analysis
-
-- **Univariate Analysis**
-
+Pada data understanding saya membuat barplot yang berjudul "10 Tahun terbanyak publikasi" digunakan untuk melihat lonjakan terbanyak dalam publikasi buku. Seperti gambar dibawah dimana barplot ini ditampilkan dari dataset Books.csv yang tahun publikasi terbanyak ada di antara tahun 1994 hingga tahun 2003.
+    
 <p align='center'>
-    <img src ="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/Univariate%20Analysis.png?raw=true" height=auto alt="pie-chart">
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/2.png?raw=true" height=auto alt="pie-chart">
 </p>
 
-Berdasarkan visualiasi pie-chart diatas, dapat disimpulkan bahwa pengidap Diabetes lebih sedikit daripada orang yang tidak mengidap anemia yaitu sebesar 9.0%. Namun, perlu diketahui bahwa angka ini cukuplah besar mengingat hal ini berkaitan langsung dengan kondisi kesehatan.
+Untuk menampilkan "10 ID Pengguna terpopuler" saya menggunakan barplot dimana menampilkan count dan UserID. Berikut merupakan tampilan dari barplot 10 ID Pengguna terpopuler:
+    
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/3.png?raw=true" height=auto alt="pie-chart">
+</p>    
 
-- **Bivariate Analysis**
+Untuk menampilkan "10 penulis terpopuler" saya menggunakan barplot dimana menampilkan count dan nama penulis. Berikut merupakan tampilan dari barplot 10 penulis terpopuler:  
+    
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/4.png?raw=true" height=auto alt="pie-chart">
+</p>
+    
+Dari gambar diatas dapat disimpulkan penulis dengan nama “James Patterson” menjadi peringkat pertama pada penulis terpopuler serta peringkat dua dan peringkat ketiga adalah penulis dengan nama “John Grisham” dan Mary Higgins Clark”. Namun bila di lihat dengan seksama penulis peringkat kedelapan dan kesembilan memiliki jumlah yang sama.
+
+Untuk menampilkan "10 Lokasi Penulis Terpopuler" saya menggunakan barplot dimana menampilkan count dan nama penulis. Berikut merupakan tampilan dari barplot 10 Lokasi Penulis Terpopuler: 
+    
+<p align='center'>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/5.png?raw=true" height=auto alt="pie-chart">
+</p>    
+    
+Dari gambar diatas dapat disimpulkan penulis lokasi "minneapolis, minnesota, usa" menjadi peringkat pertama pada lokasi penulis terpopuler serta peringkat dua dan peringkat ketiga adalah lokasi “porto, porto, portugal” dan “dumas, arkansas, usa”.     
+    
+Selanjutnya, saya menggunakan barplot kembali untuk menampilkan "10 publisher teratas" dimana terdiri dari nama publisher dan count. Berikut ini merupakan tampilan dari barplot 10 publisher teratas:
 
 <p align='center'>
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/BMI.png?raw=true" height=auto alt="BMI">
-</p>
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/6.png?raw=true" height=auto alt="pie-chart">
+</p>    
 
-Dengan menggunakan boxplot, distribusi data dapat terlihat dengan jelas terkait korelasi antara gender dan Body Mass Index. Dari gambar di atas, didapatkan adalah orang yang terkena Diabetes, memiliki kecenderungan Body Mass Index lebih tinggi. Jadi, tingginya Body Mass Index dapat memberikan indikasi kalau terkena penyakit Diabetes.
+Bila dilihat dari gambar dapat disimpulkan bahwa publisher yang berada di peringkat atas yaitu “Ballantine Books” dengan jumlah yang lebih banyak dibandingkan dengan publisher yang lain. Namun bila dilihat kembali pada peringkat sembilan dan sepuluh memiliki jumlah yang sama.
 
-<p align='center'>
-      <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/age.png?raw=true" height=200px alt="age.Hba1c_Level.blood_glucose_level">
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/Hba1c_Level.png?raw=true" height=200px alt="age.Hba1c_Level.blood_glucose_level">
-   <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/blood_glucose_level.png?raw=true" height=200px alt="age.Hba1c_Level.blood_glucose_level">
-</p>
-
-Pada feature age, Hba1c_Level dan blood_glucose_level, tidak ada perbedaan yang secara signifikan. 
-
-**Multivariate Analysis**
+Terakhir, saya membuat rata-rata rating dengan buku terbanyak dibaca dimana untuk menampilkannya saya menggunakan barplot. Saat menampilkannya terdapat data “Book_Title” dan “Book_Rating”. Berikut ini hasil dari tampilan rata-rata rating dengan buku terbanyak dibaca:
 
 <p align='center'>
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/all.png?raw=true" height=auto alt="pairplot">
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/7.png?raw=true" height=auto alt="pie-chart">
 </p>
-
-Pada multivariate analysis melalui pairplot, dapat terlihat dengan jelas bahwa penyakit Diabetes dipengaruhi oleh age, Body Mass Index dan Hba1c_Level.
-
-**Outlier & Distribution Analysis**
-
-<p align='center'>
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/AUB.png?raw=true" height=auto alt="boxplots-outlier">
-</p>
-
-<p align='center'>
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/AUH.png?raw=true" height=auto alt="hist">
-</p>
-
-Visualiasi boxplot dapat membantu untuk mengidentifikasi ada tidaknya outlier data pada masing-masing feature.
+    
+Pada gambar diatas didapatkan bahwa buku dengan judul “A Painted House” memiliki rating terbanyak dari pengguna dibandingkan buku yang lainnya.    
+    
+    
 
 ## Data Preparation
-Teknik yang digunakan dalam Data Preparation adalah sebagai berikut:
+Sebelum data benar-benar siap diolah oleh algoritma machine learning, perlu dilakukan beberapa tahapan terlebih dahulu. Pada data preparation saya menggunakan dataset dengan nama data_books, data_rating, data_users dan gabungan dari kedua dataset yaitu data_train dan data_using. Tahapan tersebut meliputi :
 
-- One-Hot Encoding
+-  Pengecekan data null
+   Pada gambar diatas, dilakukan pengecekan data null dengan menggunakan fungsi isnull dimana terdiri dari 5 dataset yaitu data_books, data_rating, data_users, data_train yang merupakan gabungan dari data_books dan data_rating dan data_using yang merupakan gabungan dari data_rating, data_users. Data tidak memiliki null sehingga tidak perlu dilakukan teknik penghapusan data null, teknik dilakukan bila disalah satu data terdapat nilai null.
+    
+-  Pengecekan data duplikat
+Selanjutnya dilakukan persiapan penghapusan data duplikat, dengan membuat variable baru dengan nama ‘data_prep’ yang berisi dataframe ‘data_train’ yang diurutkan berdasarkan ‘ISBN’ dan nama ‘data_prus’ yang berisi dataframe ‘data_using’ yang diurutkan berdasarkan ‘UserID’. Kemudian, setelah dilakukan persiapan dilanjutkan dengan penghapusan data duplikat menggunakan fungsi drop_duplicates. Penghapusan data duplikat berguna bila data train dan data test ada yang sama maka akan dihasilkan jumlah rows berkurang ketika dilakukan penghapusan data duplikat. 
+    
+-  Melakukan konversi data series dan pembuatan dictionary
+Disini dilakukan proses pengkonversian data series dalam bentuk list dimana menggunakan fungsi ‘tolist()’ dari library numpy. Proses ini menampilkan output dari jumlah books_id, books_title dan books_author yang memiliki jumlah yang sama yaitu 2519. Tahap berikutnya, membuat dictionary yang gunanya untuk menentukan pasangan key-value dari data books_id, books_title dan books_author seperti gambar dibawah ini.
 
-  Ini merupakan metode yang sangat populer digunakan untuk mengubah data kategorikal ke data numerical dengan nilai biner 0 atau 1. Proses encoding sangat diperlukan, agar data yang masuk ke dalam algoritma machine learning dapat bekerja dengan baik. Sebagian besar algoritma klasifikasi lebih mudah untuk memproses nilai numerical daripada kategorikal. Pada tahap ini, encoding dilakukan secara manual dengan membuat function untuk mengubah values data kategorikal ke numerical. Hal ini mudah untuk dilakukan secara manual karena saya telah memahami dan mengetahui values dari feature nya. Feature yang perlu untuk dilakukan encoding adalah `Gender` dan `Result`. 
 
-- Data Splitting
-
-  Proses ini merupakan tahap untuk membagi dataset menjadi data train dan test. Pembagian ini bertujuan agar data yang digunakan dapat digunakan untuk mengembangkan model dan mengevaluasi performance dari model yang sudah dikembangkan. Pada proyek ini, dataset akan di split dengan proporsi 80% atau 75306 data untuk data train dan 20% atau 18827 data untuk data testing. Sedangkan, proses splitting akan menggunakan function train_test_split() yang tersedia pada library sklearn.
-
-- Feature Scaling (Standarisasi)
-
-  Scaling bertujuan untuk menormalisasikan range pada fitur - fitur data agar seluruh fitur berada pada range yang sama. Apabila model machine learning tidak melakukan proses feature scaling, maka hasil prediksi akan lebih condong atau didominasi oleh fitur yang memiliki values terbesar, sementara fitur dengan values yang kecil, memiliki peluang yang kecil untuk mempengaruhi hasil prediksi. Pada proyek ini, scaling data akan menggunakan metode standarisasi. karena secara umum distribusi data berada pada kondisi normal dan standarisasi lebih cocok untuk digunakan dalam case yang seperti ini. proses standarisasi akan dilakukan dengan memanfaatkan function StandardScaler() yang tersedia di dalam library sklearn. Proses standarisasi bekerja dengan mengurangkan data pada fitur dengan nilai rata-rata fitur (mean), yang kemudian dibagi dengan standar deviasi. proses ini akan mengasumsikan semua fiturnya terpusat disekitaran nol dan memiliki besaran variansi yang sama.
-
-- Handling Imbalanced Class
-
-  Proporsi dari label/class pada dataset yang tidak seimbang akan menjadi permasalahan yang cukup besar, khususnya pada algoritma klasifikasi. Hal ini dikarenakan, algoritma machine learning yang digunakan akan cenderung mengklasifikasikan data ke dalam class yang memiliki data yang lebih banyak atau dominan (majority class) daripada kelas yang lebih sedikit (minority class). Hal ini akan sangat berbahaya apabila terjadi, khususnya dalam bidang kesehatan. dimana kesalahan hasil prediksi bisa saja berakibat fatal bagi pasien. Pada dataset yang dipakai dalam proyek ini, terdapat imbalanced class. dimana Synthetic Minority Over-sampling Technique (SMOTE) akan dipakai untuk handling pada kasus ini. SMOTE memakai pendekatan oversampling, hal ini dilakukan dengan mensintesis sampel baru dari minority class untuk menyeimbangkan dataset dengan cara membuat instance baru dari *minority* *class*. Dengan metode ini dapat membuat data-set menjadi seimbang.
-  
-  <p align='center'>
-       <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/PCB.png?raw=true" height=300px alt="knn">
-    <img src="https://github.com/PutriSintaDewiSinaga/Putrisds/blob/main/PCA.png?raw=true" height=300px alt="knn">
-  </p>
 
 ## Modeling
 Pada proyek ini, algoritma *machine learning* yang dipakai adalah `K-Nearest Neighbor`, `Support Vector Machine`, `Logistic Regression` dan `Random Forest`.
