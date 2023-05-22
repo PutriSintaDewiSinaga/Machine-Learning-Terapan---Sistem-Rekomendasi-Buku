@@ -112,6 +112,8 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
 
     
 -  Dataset yang pertama yakni 'Users' yang memiliki jumlah 278858 data dan 3 kolom, yakni :
+
+ > Users.csv
     
    i.   Kolom 'User-ID', berisi ID pengguna dari toko buku online
     
@@ -120,6 +122,8 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
    iii. Kolom 'Age', berisi usia pengguna.
 
 -  Dataset yang kedua yakni 'Books' yang memiliki jumlah 278858 data dan memiliki 8 kolom, diantaranya :
+  
+ > Books.csv
     
    i.    Kolom 'ISBN', merupakan identifikasi dari masing-masing buku.
     
@@ -139,6 +143,8 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
     
 
 -  Dataset yang kedua yakni 'Ratings' yang memiliki jumlah 1149780 data dan memiliki 3 kolom, berikut penjelasan mengenai kolom-kolomnya :
+
+> Ratings.csv
     
    i.   Kolom 'User-ID', yang berisi ID dari user yang memberikan rating terhadap buku.
     
@@ -149,6 +155,9 @@ Dataset yang dipakai dalam proyek machine learning ini merupakan Book Recommenda
     
 Dalam tahap ini saya melakukan Data loading dan proses EDA(Exploratory Data Analysis) yang menjelaskan variabel-variabel yang sudah dijelaskan sebelumnya. Dikarenakan ketiga dataset yang kita gunakan merupakan dataset dalam jumlah yang banyak yakni lebih dari 200.000, maka di pada proses ini saya hanya mengambil 12.000 data pertama dari setiap variabel di atas dalam pembuatan sistem rekomendasi ini.
 
+    proyek ini saya menggabungkan data itu menjadi satu sehingga menghasilkan sebagai berikut:
+    
+    
 ### Visualization & Analysis
 
 - **Univariate Analysis**
