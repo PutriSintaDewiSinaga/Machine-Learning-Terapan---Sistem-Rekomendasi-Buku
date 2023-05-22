@@ -72,7 +72,7 @@ Oleh karena itu, Sistem rekomendasi memberikan solusi terhadap permasalahan dala
 
 Referensi:
 
-[1]  [Buku]([https://www.halodoc.com/kesehatan/diabetes](https://id.wikipedia.org/wiki/Buku))
+[1]  [Buku](https://id.wikipedia.org/wiki/Buku)
     
 [2]  [SISTEM REKOMENDASI BUKU MENGGUNAKAN METODE ITEM-BASED COLLABORATIVE FILTERING](http://eprints.undip.ac.id/65823/1/laporan_24010311130044_1.pdf) 
     
@@ -83,15 +83,16 @@ Referensi:
 ### Problem Statements
 
 Berdasarkan uraian yang telah dipaparkan pada latar belakang diatas, maka dapat diambil sebuah rumusan masalah yang dirumuskan sebagai berikut:
-- Bagaimana memprediksi penyakit Diabetes pada manusia berdasarkan Body Mass Index (BMI) dengan menerapkan algoritma machine learning?
-- Bagaimana evaluasi model machine learning yang dapat memprediksi penyakit Diabetes pada manusia berdasarkan Body Mass Index (BMI)?
+- bagaimana menerapkan metode item-based collaborative filtering sebagai pendekatan dari sistem rekomendasi?
+- bagaimana proses untuk menentukan rekomendasi buku dengan menggunakan metode item-based collaborative filtering?
+- Bagaimana evaluasi model machine learning dapat menentukan rekomendasi buku?
 
 ### Goals
 
 Berdasarkan rumusan masalah yang telah dipaparkan di atas, maka proyek penelitian ini memiliki tujuan, yaitu:
-- Mengetahui penerapan algoritma machine learning dalam memprediksi penyakit Diabetes pada manusia berdasarkan Body Mass Index (BMI).
-- Mengetahui proses pengembangan model machine learning dalam memprediksi penyakit Diabetes pada manusia berdasarkan Body Mass Index (BMI).
-- Mengetahui hasil evaluasi model machine learning dalam memprediksi penyakit Diabetes pada manusia berdasarkan Body Mass Index (BMI).
+- Membuat sistem untuk merekomendasikan buku kepada pengguna.
+- Membuat sistem rekomendasi yang sesuai dengan preferensi pengguna dengan teknik Collaborative Filtering.
+- Mengetahui hasil evaluasi model machine learning dalam menentukan rekomendasi buku.
 
 ### Solution statements
 
