@@ -369,8 +369,17 @@ Kemudian saya visualisasikan metrik tersebut menggunakan plot dari library
 </p>  
 <p align="center">Gambar 19. model_metrics</p>
 
-Pada Gambar 19, Dari plot di atas dapat kita memperoleh nilai error akhir sebesar sekitar 0.40 dan error pada data validasi kurang dari 0.15. Nilai tersebut cukup bagus untuk sistem rekomendasi.  
-  
+Pada Gambar 19, Dari plot di atas dapat kita memperoleh nilai error akhir sebesar sekitar 0.40 dan error pada data validasi kurang dari 0.2. Nilai tersebut cukup bagus untuk sistem rekomendasi.  
+
+<p align="center">Tabel 1. Evaluasi root_mean_squared_error dan val_root_mean_squared_error</p> 
+    
+Metrik                        | Nilai   |
+----------------------------- | ------- |
+root_mean_squared_error       | 0.1512  |
+val_root_mean_squared_error   | 0.2980  |
+
+Pada Tabel 1, diperoleh pada epoch 100/100 nilai root_mean_squared_error sebesar 0.1512 dan nilai val_root_mean_squared_error sebesar 0.2980     
+    
 2.  Mean Squared Error (MSE). 
     Teknik ini menghitung selisih rata-rata nilai sebenarnya dengan nilai prediksi. Berikut kode programnya :
   
