@@ -361,6 +361,7 @@ Pada tahap ini saya menggunakan metrik root mean squared error (RMSE) dimana met
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/9.jpg?raw=true" height=auto alt="pie-chart">
+</p>  
 Gambar 16. Rumus Root Mean Square Error (RMSE)
   
 Pada Gambar 16, merupakan rumus untuk mencari nilai Root Mean Square Error (RMSE)
@@ -368,7 +369,8 @@ Pada Gambar 16, merupakan rumus untuk mencari nilai Root Mean Square Error (RMSE
   
 
 <p align='center'>
-  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/8.png?raw=true" height=auto alt="pie-chart">  
+  <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/8.png?raw=true" height=auto alt="pie-chart">
+</p>  
 Gambar 17. model_metrics
 
 Pada Gambar 17, merupakan hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error  
@@ -377,6 +379,7 @@ Nilai RMSE yang didapatkan pada hasil pelatihan model setelah 100 epoch, yaitu:
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss6.png?raw=true" height=auto alt="pie-chart">
+</p>  
 Gambar 18. Root Mean Square Error (RMSE)  
 
   
