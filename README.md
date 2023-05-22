@@ -267,14 +267,16 @@ Selanjutnya dilakukan persiapan penghapusan data duplikat, dengan membuat variab
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss8.png?raw=true" height=auto alt="pie-chart">
 </p>
+<p align="center">Gambar 11. check data duplikat dari data_prep</p> 
+    
     
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss9.png?raw=true" height=auto alt="pie-chart">
 </p>
-Gambar 11. check data duplikat dari data_prep dan data_prus
+<p align="center">Gambar 12. check data duplikat dari data_prus</p>
     
     
-Pada Gambar 11, merupakan hasil dari persiapan penghapusan data duplikat
+Pada Gambar 11, Gambar 12, merupakan hasil dari persiapan penghapusan data duplikat
     
     
 Kemudian, setelah dilakukan persiapan dilanjutkan dengan penghapusan data duplikat menggunakan fungsi drop_duplicates. Penghapusan data duplikat berguna bila data train dan data test ada yang sama maka akan dihasilkan jumlah rows berkurang ketika dilakukan penghapusan data duplikat. 
@@ -282,13 +284,13 @@ Kemudian, setelah dilakukan persiapan dilanjutkan dengan penghapusan data duplik
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss81.png?raw=true" height=auto alt="pie-chart">
 </p>
-
+<p align="center">Gambar 13. Penghapusan data duplikat dari data_prep</p>
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss91.png?raw=true" height=auto alt="pie-chart">
 </p>    
-Gambar 12. Penghapusan data duplikat dari data_prep dan data_prus
+<p align="center">Gambar 14. Penghapusan data duplikat dari data_prus</p>
     
-Pada Gambar 12, dapat dilihat bahwa pada data_prep jumlah rownya berkurang menjadi 2519 rows × 7 columns dan pada data_prus jumlah rownya berkurang menjadi 314 rows × 4 columns    
+Pada Gambar 13, Gambar 14, dapat dilihat bahwa pada data_prep jumlah rownya berkurang menjadi 2519 rows × 7 columns dan pada data_prus jumlah rownya berkurang menjadi 314 rows × 4 columns    
     
     
 -  Melakukan konversi data series dan pembuatan dictionary
@@ -298,9 +300,9 @@ Disini dilakukan proses pengkonversian data series dalam bentuk list dimana meng
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss4a.png?raw=true" height=auto alt="pie-chart">
 </p>  
-Gambar 13. Konversian data series dalam bentuk list
+<p align="center">Gambar 15. Konversian data series dalam bentuk list</p>
   
-Pada Gambar 13, Proses ini menampilkan output dari jumlah books_id, books_title dan books_author yang memiliki jumlah yang sama yaitu 2519. Tahap berikutnya, membuat dictionary yang gunanya untuk menentukan pasangan key-value dari data books_id, books_title dan books_author.  
+Pada Gambar 15, Proses ini menampilkan output dari jumlah books_id, books_title dan books_author yang memiliki jumlah yang sama yaitu 2519. Tahap berikutnya, membuat dictionary yang gunanya untuk menentukan pasangan key-value dari data books_id, books_title dan books_author.  
   
 -  Encoding Data
   
@@ -321,9 +323,9 @@ Untuk tahap ini dilakukan pengacakan dataset agar distribusi yang dilakukan menj
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss4.png?raw=true" height=auto alt="pie-chart">
 </p>  
-Gambar 14. Mengacak dataset  
+<p align="center">Gambar 16. Mengacak dataset</p> 
   
-Pada Gambar 14, telah dilakukan pengacakan dataset 
+Pada Gambar 16, telah dilakukan pengacakan dataset 
   
   
 Kemudian, dilakukan pembagian data train dan validasi dengan komposisi 90:10 dimana perlu dipetakkan (mapping) terlebih dahulu pada data user dan book menjadi satu value. Proses ini dilakukan untuk menguji model terhadap data baru. Selanjutnya, membuat rating dalam skala 0 sampai 1 agar mudah dalam melakukan proses training.  
@@ -342,9 +344,9 @@ Pada tahap ini saya menggunakan model collaborative filtering dimana menggunakan
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss7a.png?raw=true" height=auto alt="pie-chart">
 </p>  
-Gambar 15. Hasil Sistem Rekomendasi Collaborative Filtering 
+<p align="center">Gambar 17. Hasil Sistem Rekomendasi Collaborative Filtering</p> 
   
-Pada Gambar 15, merupakan hasil rekomendasi dari model collaborative filtering dimana user dengan id 882. Kita dapat melihat bahwa Buku dengan peringkat tinggi dari pengguna  yaitu ‘The Da Vinci Code : Dan Brown’ Serta 10 Rekomendasi Buku Teratas yang salah satunya yaitu ‘The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS’.
+Pada Gambar 17, merupakan hasil rekomendasi dari model collaborative filtering dimana user dengan id 882. Kita dapat melihat bahwa Buku dengan peringkat tinggi dari pengguna  yaitu ‘The Da Vinci Code : Dan Brown’ Serta 10 Rekomendasi Buku Teratas yang salah satunya yaitu ‘The Watsons Go to Birmingham - 1963 (Yearling Newbery) : CHRISTOPHER PAUL CURTIS’.
 
 **Kelebihan dan Kekurangan Content Based Filtering dan Collaborative Filtering**: 
 - Untuk membuat sistem rekomendasi yang mampu memberikan rekomendasi yang tepat pada User, maka dalam proyek ini dibuat sistem rekomendasi yang menerapkan dua metode/algoritma, yaitu metode Content Based Filtering dan Collaborative Filtering.
@@ -364,31 +366,31 @@ Pada tahap ini saya menggunakan metrik root mean squared error (RMSE) dimana met
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/9.jpg?raw=true" height=auto alt="pie-chart">
 </p>  
-Gambar 16. Rumus Root Mean Square Error (RMSE)
+<p align="center">Gambar 18. Rumus Root Mean Square Error (RMSE)</p>
   
-Pada Gambar 16, merupakan rumus untuk mencari nilai Root Mean Square Error (RMSE)
+Pada Gambar 18, merupakan rumus untuk mencari nilai Root Mean Square Error (RMSE)
   
   
 
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/8.png?raw=true" height=auto alt="pie-chart">
 </p>  
-Gambar 17. model_metrics
+<p align="center">Gambar 19. model_metrics</p>
 
-Pada Gambar 17, merupakan hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error  
+Pada Gambar 19, merupakan hasil visualisasi metrik RMSE dari proses training yang menggunakan matplotlib. Dimana menampilkan plot root_mean_squared_error dan val_root_mean_squared_error  
   
 Nilai RMSE yang didapatkan pada hasil pelatihan model setelah 100 epoch, yaitu:
   
 <p align='center'>
   <img src ="https://github.com/PutriSintaDewiSinaga/Machine-Learning-Terapan---Sistem-Rekomendasi-Buku/blob/main/ss6.png?raw=true" height=auto alt="pie-chart">
 </p>  
-Gambar 18. Root Mean Square Error (RMSE)  
+<p align="center">Gambar 20. Root Mean Square Error (RMSE)</p>
 
   
-Pada Gambar 18, Hasil dari kode program di atas yakni : MSE dari pada data train = 2.134168001215646e-05 MSE dari pada data validation = 8.878335751528855e-05
+Pada Gambar 20, Hasil dari kode program di atas yakni : MSE dari pada data train = 2.134168001215646e-05 MSE dari pada data validation = 8.878335751528855e-05
 
   
-Tabel 1. Evaluasi root_mean_squared_error dan val_root_mean_squared_error  
+<p align="center">Tabel 1. Evaluasi root_mean_squared_error dan val_root_mean_squared_error</p> 
 Metrik                        | Nilai   |
 ----------------------------- | ------- |
 root_mean_squared_error       | 0.1512  |
@@ -397,7 +399,6 @@ val_root_mean_squared_error   | 0.2980  |
 Pada Tabel 1, diperoleh pada epoch 100 nilai root_mean_squared_error sebesar 0.1512 dan nilai val_root_mean_squared_error sebesar 0.2980    
     
 ## Conclusion
-Conclusion
 
 Berdasarkan dari hasil visualisasi metrik RMSE , MSE dari pada data train adalah 2.134168001215646e-05 dan MSE dari pada data validation adalah 8.878335751528855e-05. berdasarkan hal tersebut, pembuatan model dengan pendekatan Collaborative Filtering ini dapat digunakan untuk merekomendasikan buku yang belum pernah dibaca atau mungkin disukai pengguna. Selain itu, kini pengguna dapat mempersingkat waktu pencarian buku dengan memanfaatkan hasil rekomendasi yang telah diberikan oleh model. 
   
