@@ -96,14 +96,12 @@ Berdasarkan rumusan masalah yang telah dipaparkan di atas, maka proyek penelitia
 
 ### Solution statements
 
-Berdasarkan tujuan yang telah dipaparkan diatas, maka proyek penelitian ini memiliki solusi atau tahapan sebagai berikut:
+Untuk menyelesaikan permasalahan di atas, kita akan menggunakan dua algoritma sistem rekomendasi sebagai solusi permasalahan, yakni Content-Based Filtering dan yang kedua yakni Collaborative Filtering.
 
-- Melakukan data preprocessing dan exploratory data analysis pada dataset yang dipakai dengan memvisualiasasikan keterkaitan antar feature pada data tersebut untuk mendapatkan insight dan knowledge.
-- Mengembangkan model menggunakan algoritma klasifikasi yang sesuai dengan memprediksi kelas atau kategori data dengan memanfaatkan nilai yang ada pada dataset. Untuk mencapai keakuratan hasil prediksi, apabila nilai metriks yang didapatkan pada evaluation model kurang memuaskan, maka akan dilakukan improvement pada baseline model pada masing-masing algoritma menggunakan hyperparameter tuning. Algoritma yang akan dipakai diantaranya adalah sebagai berikut:
-  - K-Nearest Neighbors (KNN), merupakan algoritma sederhana yang dapat mengklasifikasikan data berdasarkan tetangga terdekatnya sebagai acuan menggunakan prinsip similarity.
-  - Support Vector Machine (SVM), merupakan algoritma yang dapat digunakan untuk menyelesaikan permasalahan klasifikasi dengan menemukan *hyperplane* yang optimal dalam ruang n-dimensi.
-  - Random Forest, merupakan algoritma *machine learning* berbasis ensemble yang dapat digunakan pada permasalahan klasifikasi. random forest berkerja dengan sekumpulan tree untuk menghasilkan prediksi yang baik.
-- Melakukan evaluation model menggunakan metriks evaluasi. evaluasi ini dilakukan untuk mengetahui kinerja atau performance dari model yang telah dikembangkan.
+-  Content Based Filtering. Algoritma ini akan merekomendasikan item yang mirip dengan item yang disukai pengguna di masa lalu. Kelebihan dari algoritma ini yakni semakin banyak informasi yang diberikan pengguna, semakin baik akurasi sistem rekomendasi. Kekurangannya yakni Sistem hanya akan menunjukkan item yang nilainya tinggi untuk dicocokkan dengan profil pengguna, maka pengguna akan selalu menemukan item serupa dengan yang sudah direkomendasikan sebelumnya.
+Collaborative Filtering. 
+    
+-  Collaborative filtering bergantung pada pendapat komunitas pengguna. Ia tidak memerlukan atribut untuk setiap itemnya seperti pada sistem berbasis konten. Kelebihan dari teknik ini yakni dapat membantu pengguna menemukan minat baru. Kekurangannya yakni tidak dapat menangani item baru/fresh. Jadi, jika item tidak terlihat selama pelatihan, sistem tidak dapat melakukan proses embedding untuk item tersebut dan tidak dapat mengkueri model dengan item ini.
 
 ## Data Understanding
 Dataset yang dipakai dalam proyek machine learning ini merupakan dataset anemia dengan 1421 records data. Dataset ini bersifat open-source yang dipubilkasikan oleh Biswa Ranjan Rao melalui platform [Kaggle: Diabetes prediction dataset](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). Topik dari datasetnya adalah kesehatan yang berformat csv (comma-separated values) dengan ukuran 3.81 MB.
