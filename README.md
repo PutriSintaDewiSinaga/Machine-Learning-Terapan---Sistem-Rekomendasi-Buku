@@ -391,7 +391,9 @@ Metrik                        | Nilai   |
 ----------------------------- | ------- |
 root_mean_squared_error       | 0.1512  |
 val_root_mean_squared_error   | 0.2980  |
-  
+
+Pada Tabel 1, diperoleh pada epoch 100 nilai root_mean_squared_error sebesar 0.1512 dan nilai val_root_mean_squared_error sebesar 0.2980    
+    
 ## Conclusion
 Conclusion
 
